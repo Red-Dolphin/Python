@@ -1,9 +1,10 @@
 # List using for loop
+
 square=[]
 
-# range=[2,10] // can be use this format
+# range=[2,10] // you may use this format
 
-for x in range(1,10):
+for x in range(1,10): # Range function
     square.append(x**2 )
 print(square)
 print(square[-1]) # Accessing certain element
@@ -21,15 +22,60 @@ x=len(square)
 print('length is', x)
 
 # list in string format
+
 square2=['Ram','Sam','Jadu','Riya','Akas','Sayani']
 print(square2)
-square2.append('Ishita') #list.append() takes exactly one argument
+square2.append('Ishita')            #list.append() takes exactly one argument
 print(square2)
-square2.remove('Ram') # .remove use to delete certain element => list.remove
+square2.remove('Ram')     # .remove use to delete certain element => list.remove
 print(square2)
-                      # square2.remove('-1') ** can't use in this form
+                          # square2.remove('-1') ** can't use in this form
 
 #  insert element in a certain position 
+
 square2.insert(0,"Name list")
 print(square2)
-print(square2.pop(3)) # pop expected at most 1 argument
+print(square2.pop(2))       # pop expected at most 1 argument
+
+# sorting of a list
+
+print(sorted(square2))
+print(square2.sort())
+
+# Combining two list
+
+square3=square1 + square2
+print(square3)
+
+# Range function
+
+for number in range(0,5):
+    print(number)
+ 
+# minimum value in a list
+
+minimum=min(square)    
+print('min value',minimum)
+
+# maximum in a list
+
+maximum=max(square)
+print('max value',maximum)
+
+# Sum of a list
+
+sumation=sum(square)
+print('sum is',sumation)
+
+# Slicing of a list
+
+square4=square3[5:14]
+print(square4)
+square5=square3[-5:]            # Negative indexing
+print(square5)
+
+# Copying of a list
+
+square6=square5[:]
+print('Copied List',square6)
+

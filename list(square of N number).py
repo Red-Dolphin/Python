@@ -16,3 +16,6 @@ for y in range(0,(n-1)):
              # total=0 The sum will returns to the last value of the list 
     total=total +  square[y]
 print(total)    
+# you can also find sumation using sum function
+sumation=sum(square)
+print('The sum is',sumation)
