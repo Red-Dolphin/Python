@@ -23,11 +23,11 @@ print('length is', x)
 
 # list in string format
 
-square2=['Ram','Sam','Jadu','Riya','Akas','Sayani']
+square2=['ram','sam','jadu','riya','akas','sayani']
 print(square2)
 square2.append('Ishita')            #list.append() takes exactly one argument
 print(square2)
-square2.remove('Ram')     # .remove use to delete certain element => list.remove
+square2.remove('ram')     # .remove use to delete certain element => list.remove
 print(square2)
                           # square2.remove('-1') ** can't use in this form
 
@@ -77,5 +77,14 @@ print(square5)
 # Copying of a list
 
 square6=square5[:]
-print('Copied List',square6)
+print('Copied List\n',square6)
 
+# making uper case in name
+# 1. Using for loop
+square6=[]
+for x in square2:
+    square6.append(x.upper())
+print('using for loop\n',square6)    
+# 2. Using comprehension
+square7=[name.upper() for name in square2]
+print("using comprehention\n",square7)
