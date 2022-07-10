@@ -6,3 +6,7 @@ d={'name':"Tapan",'occupation':"student",'contact':"8371086251",
 x=input("what do you want to know about me..?\n")
 
 print(d[x])
+
+#length of a  dictionary
+x1=len(d)
+print()

@@ -1,0 +1,11 @@
+1. Camel case:
+Each word start with capital except the 1st word
+myVariableName= 'JOHN'
+
+2. Pascal case :
+Each word start with capital letter
+MyVariableName='john'
+
+3.Snake case:
+Each word is separated with a underscore
+my_variable_name='john'
